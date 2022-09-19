@@ -1,0 +1,3348 @@
+Header length: 484
+{"ssh_conf": {"host_conf": {"address": "172.29.11.21", "user": "admin", "password": "*", "port": 22, "key": "*"}, "prompt_re": "RP/\\d+/\\S*\\d+/CPU\\d+:[^(#]*(?:\\((.*)\\))?#", "tunnel_conf": null, "line_split_re": "\\r\\n|\\n", "encoding": "utf-8", "decode_errors": "ignore", "connect_timeout": 20, "request_pty": true, "line_processor": ["ssh_conf", "cisco_remove_cr_as_line_start"], "new_line": "\n", "blockers": []}, "device_manager_guid": "33da8f95-048e-4d9b-92c4-b3692cbd3f0c"}
+****************************************************************************************************
+Total length: 45
+SSH_CONNECTION
+CONNECTED:
+Status: OK
+Error: 
+
+****************************************************************************************************
+Total length: 212
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:21.540909
+Command: terminal length 0
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:22.039526
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:22.207 PDT
+
+****************************************************************************************************
+Total length: 760
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:22.040314
+Command: show version
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:22.324732
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:22.473 PDT
+Cisco IOS XR Software, Version 7.3.2 LNT
+Copyright (c) 2013-2021 by Cisco Systems, Inc.
+
+Build Information:
+ Built By     : ingunawa
+ Built On     : Thu Oct 14 08:42:55 UTC 2021
+ Build Host   : iox-ucs-020
+ Workspace    : /auto/srcarchive17/prod/7.3.2/8000/ws
+ Version      : 7.3.2
+ Label        : 7.3.2
+
+cisco 8000 (Intel(R) Xeon(R) CPU D-1530 @ 2.40GHz)
+cisco 8201 (Intel(R) Xeon(R) CPU D-1530 @ 2.40GHz) processor with 32GB of memory
+ron-8201-2 uptime is 7 weeks, 1 day, 1 hour, 26 minutes
+Cisco 8201 Chassis w/ 24x400GE QSFP56-DD & 12x100GE QSFP28
+
+
+****************************************************************************************************
+Total length: 244
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:22.325195
+Command: show running-config hostname
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:22.711053
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:22.758 PDT
+hostname ron-8201-2
+
+
+****************************************************************************************************
+Total length: 5000
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:22.711723
+Command: show inventory details
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:23.189514
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:23.145 PDT
+
+NAME: "Rack 0", DESCR: "Cisco 8201 Chassis w/ 24x400GE QSFP56-DD & 12x100GE QSFP28"
+PID: 8201              , VID: V02, SN: FOC2428NWJC
+MFG_NAME: N/A               , SNMP_IDX: 8384513   , Type: Rack       
+PN: 68-6825-07, HW Ver: 1.0      
+
+NAME: "0/RP0/CPU0", DESCR: "Cisco 8201 Chassis w/ 24x400GE QSFP56-DD & 12x100GE QSFP28"
+PID: 8201              , VID: V02, SN: FOC2427N5Q8
+MFG_NAME: Cisco Systems, Inc., SNMP_IDX: 1         , Type: Module     
+PN: 68-6825-07, HW Ver: 1.0      
+
+NAME: "FourHundredGigE0/0/0/0", DESCR: "Cisco QSFPDD 400G PASSIVE COPPER Pluggable Optics Module"
+PID: QDD-400-CU2M      , VID: V01 , SN: LCC2412GFVD-B
+MFG_NAME: CISCO-LEONI       , SNMP_IDX: 2457601   , Type: Module     
+PN: L45593-K218-C20, HW Ver: 0.0      
+
+NAME: "FourHundredGigE0/0/0/10", DESCR: "Cisco QSFPDD 400G ZRP Pluggable Optics Module"
+PID: QDD-400G-ZRP-S    , VID: V01 , SN: ACA2524002B
+MFG_NAME: CISCO-ACACIA      , SNMP_IDX: 2498561   , Type: Module     
+PN: DP04QSDD-E30-190, HW Ver: 0.0      
+
+NAME: "FourHundredGigE0/0/0/20", DESCR: "Cisco QSFPDD 400G ZR Pluggable Optics Module"
+PID: QDD-400G-ZR-S     , VID: ES03, SN: ACA245100EU
+MFG_NAME: CISCO-ACACIA      , SNMP_IDX: 2539521   , Type: Module     
+PN: DP04QSDD-E20-19E, HW Ver: 0.0      
+
+NAME: "HundredGigE0/0/0/24", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2432A138-A
+MFG_NAME: CISCO-DELTA       , SNMP_IDX: 2555905   , Type: Module     
+PN: QAOC-100G4F1A03C, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/25", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC5M   , VID: V03, SN: INL24220229-B
+MFG_NAME: CISCO-INNOLIGHT   , SNMP_IDX: 2560001   , Type: Module     
+PN: TF-FC005-NC2, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/26", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B969-A
+MFG_NAME: CISCO-DELTA       , SNMP_IDX: 2564097   , Type: Module     
+PN: QAOC-100G4F1A03C, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/28", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B913-A
+MFG_NAME: CISCO-DELTA       , SNMP_IDX: 2572289   , Type: Module     
+PN: QAOC-100G4F1A03C, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/29", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B970-A
+MFG_NAME: CISCO-DELTA       , SNMP_IDX: 2576385   , Type: Module     
+PN: QAOC-100G4F1A03C, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/30", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC5M   , VID: V03, SN: INL24220140-B
+MFG_NAME: CISCO-INNOLIGHT   , SNMP_IDX: 2580481   , Type: Module     
+PN: TF-FC005-NC2, HW Ver: 0.1      
+
+NAME: "HundredGigE0/0/0/33", DESCR: "Cisco QSFP28 100G SM SR Pluggable Optics Module"
+PID: QSFP-100G-SM-SR   , VID: V02, SN: INL24216064
+MFG_NAME: CISCO-INNOLIGHT   , SNMP_IDX: 2592769   , Type: Module     
+PN: TR-FC13H-HCI, HW Ver: 0.1      
+
+NAME: "FortyGigE0/0/0/34", DESCR: "Cisco QSFP+ 40G SR BD Pluggable Optics Module"
+PID: QSFP-40G-SR-BD    , VID: V02, SN: AVM2434U3UD
+MFG_NAME: CISCO-AVAGO       , SNMP_IDX: 2596865   , Type: Module     
+PN: AFBR-79EBPZ-CS2, HW Ver: 0.1      
+
+NAME: "FourHundredGigE0/0/0/8", DESCR: "Cisco QSFPDD 400G ZRP Pluggable Optics Module"
+PID: QDD-400G-ZRP-S    , VID: ES03, SN: ACA2501003Y
+MFG_NAME: CISCO-ACACIA      , SNMP_IDX: 2490369   , Type: Module     
+PN: DP04QSDD-E30-19E, HW Ver: 0.0      
+
+NAME: "0/FT0", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R85S
+MFG_NAME: N/A               , SNMP_IDX: 4097      , Type: Fantray    
+PN: 800-47126-01, HW Ver: 0.0      
+
+NAME: "0/FT1", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R791
+MFG_NAME: N/A               , SNMP_IDX: 8193      , Type: Fantray    
+PN: 800-47126-01, HW Ver: 0.0      
+
+NAME: "0/FT2", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R70C
+MFG_NAME: N/A               , SNMP_IDX: 12289     , Type: Fantray    
+PN: 800-47126-01, HW Ver: 0.0      
+
+NAME: "0/FT3", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R79F
+MFG_NAME: N/A               , SNMP_IDX: 16385     , Type: Fantray    
+PN: 800-47126-01, HW Ver: 0.0      
+
+NAME: "0/FT4", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R78Z
+MFG_NAME: N/A               , SNMP_IDX: 20481     , Type: Fantray    
+PN: 800-47126-01, HW Ver: 0.0      
+
+NAME: "0/PM1", DESCR: "2000W AC Power Module with Port-side Air Intake"
+PID: PSU2KW-ACPI       , VID: V01 , SN: POG2437K00Z
+MFG_NAME: N/A               , SNMP_IDX: 28673     , Type: Power Supply
+PN: 341-100948-01, HW Ver: 0.0      
+
+****************************************************************************************************
+Total length: 2839
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:23.189956
+Command: show inventory
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:23.459153
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:23.624 PDT
+
+NAME: "Rack 0", DESCR: "Cisco 8201 Chassis w/ 24x400GE QSFP56-DD & 12x100GE QSFP28"
+PID: 8201              , VID: V02, SN: FOC2428NWJC
+
+NAME: "0/RP0/CPU0", DESCR: "Cisco 8201 Chassis w/ 24x400GE QSFP56-DD & 12x100GE QSFP28"
+PID: 8201              , VID: V02, SN: FOC2427N5Q8
+
+NAME: "FourHundredGigE0/0/0/0", DESCR: "Cisco QSFPDD 400G PASSIVE COPPER Pluggable Optics Module"
+PID: QDD-400-CU2M      , VID: V01 , SN: LCC2412GFVD-B
+
+NAME: "FourHundredGigE0/0/0/10", DESCR: "Cisco QSFPDD 400G ZRP Pluggable Optics Module"
+PID: QDD-400G-ZRP-S    , VID: V01 , SN: ACA2524002B
+
+NAME: "FourHundredGigE0/0/0/20", DESCR: "Cisco QSFPDD 400G ZR Pluggable Optics Module"
+PID: QDD-400G-ZR-S     , VID: ES03, SN: ACA245100EU
+
+NAME: "HundredGigE0/0/0/24", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2432A138-A
+
+NAME: "HundredGigE0/0/0/25", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC5M   , VID: V03, SN: INL24220229-B
+
+NAME: "HundredGigE0/0/0/26", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B969-A
+
+NAME: "HundredGigE0/0/0/28", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B913-A
+
+NAME: "HundredGigE0/0/0/29", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC3M   , VID: V03, SN: DTS2427B970-A
+
+NAME: "HundredGigE0/0/0/30", DESCR: "Cisco QSFP28 100G AOC Pluggable Optics Module"
+PID: QSFP-100G-AOC5M   , VID: V03, SN: INL24220140-B
+
+NAME: "HundredGigE0/0/0/33", DESCR: "Cisco QSFP28 100G SM SR Pluggable Optics Module"
+PID: QSFP-100G-SM-SR   , VID: V02, SN: INL24216064
+
+NAME: "FortyGigE0/0/0/34", DESCR: "Cisco QSFP+ 40G SR BD Pluggable Optics Module"
+PID: QSFP-40G-SR-BD    , VID: V02, SN: AVM2434U3UD
+
+NAME: "FourHundredGigE0/0/0/8", DESCR: "Cisco QSFPDD 400G ZRP Pluggable Optics Module"
+PID: QDD-400G-ZRP-S    , VID: ES03, SN: ACA2501003Y
+
+NAME: "0/FT0", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R85S
+
+NAME: "0/FT1", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R791
+
+NAME: "0/FT2", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R70C
+
+NAME: "0/FT3", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R79F
+
+NAME: "0/FT4", DESCR: "1RU Fan with Port-side Air Intake"
+PID: FAN-1RU-PI        , VID: V01 , SN: DCH2440R78Z
+
+NAME: "0/PM1", DESCR: "2000W AC Power Module with Port-side Air Intake"
+PID: PSU2KW-ACPI       , VID: V01 , SN: POG2437K00Z
+
+****************************************************************************************************
+Total length: 57086
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:23.459898
+Command: show interfaces
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:24.550803
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:23.894 PDT
+Bundle-Ether1 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is Aggregated Ethernet interface(s), address is 643a.ea34.af04
+  Internet address is 100.1.2.2/31
+  MTU 9192 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation ARPA,
+  Full-duplex, 0Kb/s
+  loopback not set,
+  ARP type ARPA, ARP timeout 04:00:00
+    No. of members in this bundle: 2
+      HundredGigE0/0/0/28          Full-duplex  100000Mb/s   Configured      
+      HundredGigE0/0/0/29          Full-duplex  100000Mb/s   Configured      
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+Bundle-Ether26 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is Aggregated Ethernet interface(s), address is 643a.ea34.af08
+  Internet address is 100.1.1.71/31
+  MTU 1514 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation ARPA,
+  Full-duplex, 0Kb/s
+  loopback not set,
+  ARP type ARPA, ARP timeout 04:00:00
+    No. of members in this bundle: 0
+  Last input Unknown, output Unknown
+  Last clearing of "show interface" counters Unknown
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+
+Bundle-Ether812 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is Aggregated Ethernet interface(s), address is 643a.ea34.af0a
+  Internet address is Unknown
+  MTU 1514 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation ARPA,
+  Full-duplex, 0Kb/s
+  loopback not set,
+    No. of members in this bundle: 0
+  Last input Unknown, output Unknown
+  Last clearing of "show interface" counters Unknown
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+
+Bundle-Ether8212 is up, line protocol is up 
+  Interface state transitions: 7
+  Hardware is Aggregated Ethernet interface(s), address is 643a.ea34.af02
+  Internet address is 100.1.1.1/31
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s
+  loopback not set,
+  Last link flapped 3d21h
+  ARP type ARPA, ARP timeout 04:00:00
+    No. of members in this bundle: 1
+      FourHundredGigE0/0/0/0       Full-duplex  400000Mb/s   Active          
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  30 second input rate 47000 bits/sec, 42 packets/sec
+  30 second output rate 45000 bits/sec, 41 packets/sec
+     92405252880 packets input, 129170687909170 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     604417565892 packets output, 847679100604422 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+Bundle-Ether8223 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is Aggregated Ethernet interface(s), address is 643a.ea34.af03
+  Description: .. ZR bundle from 8202 to 8203
+  Internet address is 8.2.2.1/30
+  MTU 1514 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation ARPA,
+  Full-duplex, 0Kb/s
+  loopback not set,
+  ARP type ARPA, ARP timeout 04:00:00
+    No. of members in this bundle: 0
+  Last input Unknown, output Unknown
+  Last clearing of "show interface" counters Unknown
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+
+Loopback0 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is Loopback interface(s)
+  Internet address is 100.0.0.2/32
+  MTU 1500 bytes, BW 0 Kbit
+     reliability Unknown, txload Unknown, rxload Unknown
+  Encapsulation Loopback,  loopback not set,
+  Last link flapped 7w1d
+  Last input Unknown, output Unknown
+  Last clearing of "show interface" counters Unknown
+  Input/output data rate is disabled.
+
+Null0 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is Null interface
+  Internet address is Unknown
+  MTU 1500 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation Null,  loopback not set,
+  Last link flapped 7w1d
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+srte_c_22720_ep_100.0.0.1 is up, line protocol is up 
+  Interface state transitions: 7
+  Hardware is Tunnel-TE
+  Internet address is 100.0.0.2/32
+  MTU 1500 bytes, BW 0 Kbit
+     reliability 0/255, txload Unknown, rxload Unknown
+  Encapsulation TUNNEL,  loopback not set,
+  Last link flapped 3d21h
+  Last input never, output 3d21h
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     14441 packets output, 1548539 bytes, 8 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+MgmtEth0/RP0/CPU0/0 is up, line protocol is up 
+  Interface state transitions: 5
+  Hardware is Management Ethernet, address is 084f.a95c.fb97 (bia 084f.a95c.fb97)
+  Internet address is 172.29.11.21/25
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, 1000BASE-T, link type is autonegotiation
+  loopback not set,
+  Last link flapped 2w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 16000 bits/sec, 33 packets/sec
+  5 minute output rate 851000 bits/sec, 127 packets/sec
+     157037680 packets input, 9924357076 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 12884320 broadcast packets, 7261004 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     422281156 packets output, 483919236879 bytes, 0 total output drops
+     Output 55 broadcast packets, 24 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     5 carrier transitions
+
+FortyGigE0/0/0/34 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is FortyGigE, address is 643a.ea34.aee8 (bia 643a.ea34.aee8)
+  Description: "To ron-ucs-1 40G-2" 
+  Internet address is 200.2.1.1/24
+  MTU 9192 bytes, BW 40000000 Kbit (Max: 40000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 40000Mb/s, 40GBASE-SR-BD, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:11, output 00:00:00
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     144635 packets input, 12583245 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     144884 packets output, 21297879 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+FourHundredGigE0/0/0/0 is up, line protocol is up 
+  Interface state transitions: 7
+  Hardware is FourHundredGigE, address is 643a.ea34.ae00 (bia 643a.ea34.ae00)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, 400GBASE_CR8, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 3d21h
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  30 second input rate 48000 bits/sec, 43 packets/sec
+  30 second output rate 46000 bits/sec, 42 packets/sec
+     92405252881 packets input, 129170687909306 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     604417565893 packets output, 847679100604558 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     7 carrier transitions
+
+FourHundredGigE0/0/0/1 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae08 (bia 643a.ea34.ae08)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/2 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae10 (bia 643a.ea34.ae10)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/3 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae18 (bia 643a.ea34.ae18)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/4 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae20 (bia 643a.ea34.ae20)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/5 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae28 (bia 643a.ea34.ae28)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/6 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae30 (bia 643a.ea34.ae30)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/7 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae38 (bia 643a.ea34.ae38)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/8 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is FourHundredGigE, address is 643a.ea34.ae40 (bia 643a.ea34.ae40)
+  Description: "To 8201-3 via NCS1K" 
+  Internet address is 100.1.2.6/31
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, 400GBASE-ZRP, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 239000 bits/sec, 179 packets/sec
+  5 minute output rate 219000 bits/sec, 175 packets/sec
+     266139858872 packets input, 373137445102475 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 1 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     6423902511 packets output, 8886325972749 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+FourHundredGigE0/0/0/9 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae48 (bia 643a.ea34.ae48)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/10 is down, line protocol is down 
+  Interface state transitions: 18
+  Hardware is FourHundredGigE, address is 643a.ea34.ae50 (bia 643a.ea34.ae50)
+  Internet address is 100.8.1.100/24
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, 400GBASE-ZRP, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 23:32:34
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 1d11h, output 23:32:28
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     4613129 packets input, 1835697493 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 11 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     1570853 packets output, 528127185 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     20 carrier transitions
+
+FourHundredGigE0/0/0/11 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae58 (bia 643a.ea34.ae58)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/12 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae60 (bia 643a.ea34.ae60)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/13 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae68 (bia 643a.ea34.ae68)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/14 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae70 (bia 643a.ea34.ae70)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/15 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae78 (bia 643a.ea34.ae78)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/16 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae80 (bia 643a.ea34.ae80)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/17 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae88 (bia 643a.ea34.ae88)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/18 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae90 (bia 643a.ea34.ae90)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/19 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.ae98 (bia 643a.ea34.ae98)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/20 is down, line protocol is down 
+  Interface state transitions: 6
+  Hardware is FourHundredGigE, address is 643a.ea34.aea0 (bia 643a.ea34.aea0)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, 400GBASE-ZR, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 10:04:24
+  Last input 10:04:25, output 10:04:25
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     796095626 packets input, 79744478312 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 2 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     105750573473 packets output, 147530346897031 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     6 carrier transitions
+
+FourHundredGigE0/0/0/21 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.aea8 (bia 643a.ea34.aea8)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+FourHundredGigE0/0/0/22 is down, line protocol is down 
+  Interface state transitions: 2
+  Hardware is FourHundredGigE, address is 643a.ea34.aeb0 (bia 643a.ea34.aeb0)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 2w1d
+  Last input 2w1d, output 2w1d
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     28515 packets input, 3022590 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     28514 packets output, 3763848 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     2 carrier transitions
+
+FourHundredGigE0/0/0/23 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is FourHundredGigE, address is 643a.ea34.aeb8 (bia 643a.ea34.aeb8)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 400000000 Kbit (Max: 400000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 400000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/24 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is HundredGigE, address is 643a.ea34.aec0 (bia 643a.ea34.aec0)
+  Description: "ron-sw-1 Eth1/50" 
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w1d
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 36000 bits/sec, 47 packets/sec
+  5 minute output rate 57000 bits/sec, 13 packets/sec
+     112744851 packets input, 69652754078 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     159123818 packets output, 141398033453 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+HundredGigE0/0/0/24.300 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is VLAN sub-interface(s), address is 643a.ea34.aec0
+  Description: "CDG Inband" 
+  Internet address is 201.0.0.1/24
+  MTU 1518 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation 802.1Q Virtual LAN, VLAN Id 300,  loopback not set,
+  Last link flapped 7w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 35000 bits/sec, 45 packets/sec
+  5 minute output rate 55000 bits/sec, 12 packets/sec
+     104047964 packets input, 68934102928 bytes, 2 total input drops
+     16 drops for unrecognized upper-level protocol
+     Received 84515 broadcast packets, 1522114 multicast packets
+     102486836 packets output, 70564930222 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+HundredGigE0/0/0/24.401 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is VLAN sub-interface(s), address is 643a.ea34.aec0
+  Internet address is 204.1.0.1/24
+  MTU 1518 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation 802.1Q Virtual LAN, VLAN Id 401,  loopback not set,
+  Last link flapped 4w2d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 03:36:43, output 03:36:43
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     258731 packets input, 28673467 bytes, 1 total input drops
+     756 drops for unrecognized upper-level protocol
+     Received 14 broadcast packets, 0 multicast packets
+     51391935 packets output, 69528558183 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+HundredGigE0/0/0/25 is up, line protocol is up 
+  Interface state transitions: 5
+  Hardware is HundredGigE, address is 643a.ea34.aec4 (bia 643a.ea34.aec4)
+  Internet address is 100.1.2.4/31
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 3d20h
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 12000 bits/sec, 4 packets/sec
+  5 minute output rate 2000 bits/sec, 1 packets/sec
+     456778559 packets input, 580183184385 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 4 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     401717658 packets output, 552633525569 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     5 carrier transitions
+
+HundredGigE0/0/0/26 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is HundredGigE, address is 643a.ea34.aec8 (bia 643a.ea34.aec8)
+  Description: "cloud-ncs540-1 0/0/0/28" 
+  Internet address is 100.1.1.128/31
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w1d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 271000 bits/sec, 216 packets/sec
+  5 minute output rate 255000 bits/sec, 214 packets/sec
+     716558027672 packets input, 1004239495410441 bytes, 9 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 1 broadcast packets, 11544 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     359189951451 packets output, 501023803730377 bytes, 1 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+HundredGigE0/0/0/27 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aecc (bia 643a.ea34.aecc)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/28 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aed0 (bia 643a.ea34.aed0)
+  Internet address is Unknown
+  MTU 9192 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/29 is down, line protocol is down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aed4 (bia 643a.ea34.aed4)
+  Internet address is Unknown
+  MTU 9192 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/30 is up, line protocol is up 
+  Interface state transitions: 35
+  Hardware is HundredGigE, address is 643a.ea34.aed8 (bia 643a.ea34.aed8)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-AOC, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 2d21h
+  Last input never, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 4000 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     1626385 packets output, 2273480588 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     35 carrier transitions
+
+HundredGigE0/0/0/30.100 is up, line protocol is up 
+  Interface state transitions: 35
+  Hardware is VLAN sub-interface(s), address is 643a.ea34.aed8
+  Description: .. Sub interface for latency measurement ZR
+  Internet address is 82.100.2.2/24
+  MTU 1518 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation 802.1Q Virtual LAN, VLAN Id 100,  loopback not set,
+  Last link flapped 2d21h
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input never, output 00:00:00
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 1000 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     493941 packets output, 739403559 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+HundredGigE0/0/0/30.101 is up, line protocol is up 
+  Interface state transitions: 35
+  Hardware is VLAN sub-interface(s), address is 643a.ea34.aed8
+  Description: .. Sub interface for latency measurement ZRP
+  Internet address is 82.101.2.2/24
+  MTU 1518 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation 802.1Q Virtual LAN, VLAN Id 101,  loopback not set,
+  Last link flapped 2d21h
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input never, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 1000 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     493851 packets output, 739268829 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+HundredGigE0/0/0/30.102 is up, line protocol is up 
+  Interface state transitions: 35
+  Hardware is VLAN sub-interface(s), address is 643a.ea34.aed8
+  Description: .. Sub interface for latency measurement Gray
+  Internet address is 82.102.2.2/24
+  MTU 1518 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation 802.1Q Virtual LAN, VLAN Id 102,  loopback not set,
+  Last link flapped 2d21h
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input never, output 00:00:00
+  Last clearing of "show interface" counters never
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 1000 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     493830 packets output, 739237392 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+HundredGigE0/0/0/31 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aedc (bia 643a.ea34.aedc)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/32 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aee0 (bia 643a.ea34.aee0)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+HundredGigE0/0/0/33 is up, line protocol is up 
+  Interface state transitions: 11
+  Hardware is HundredGigE, address is 643a.ea34.aee4 (bia 643a.ea34.aee4)
+  Internet address is 82.2.3.0/31
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 241/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, 100GBASE-SM-SR, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 2w5d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 1000 bits/sec, 0 packets/sec
+     31282423 packets input, 36048935034 bytes, 109505 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 8 broadcast packets, 218627 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     904330 packets output, 637996703 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     11 carrier transitions
+
+HundredGigE0/0/0/35 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is HundredGigE, address is 643a.ea34.aeec (bia 643a.ea34.aeec)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 100000000 Kbit (Max: 100000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 100000Mb/s, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+
+
+****************************************************************************************************
+Total length: 9819
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:24.551565
+Command: show arp
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:25.051189
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:24.984 PDT
+
+-------------------------------------------------------------------------------
+0/RP0/CPU0
+-------------------------------------------------------------------------------
+Address         Age        Hardware Addr   State      Type  Interface
+82.2.3.0        -          643a.ea34.aee4  Interface  ARPA  HundredGigE0/0/0/33
+82.2.3.1        01:00:56   6c13.d5d2.6ad0  Dynamic    ARPA  HundredGigE0/0/0/33
+82.100.2.2      -          643a.ea34.aed8  Interface  ARPA  HundredGigE0/0/0/30.100
+82.101.2.2      -          643a.ea34.aed8  Interface  ARPA  HundredGigE0/0/0/30.101
+82.102.2.2      -          643a.ea34.aed8  Interface  ARPA  HundredGigE0/0/0/30.102
+100.1.1.0       00:01:49   0476.b0da.4d04  Dynamic    ARPA  Bundle-Ether8212
+100.1.1.1       -          643a.ea34.af02  Interface  ARPA  Bundle-Ether8212
+100.1.1.128     -          643a.ea34.aec8  Interface  ARPA  HundredGigE0/0/0/26
+100.1.1.129     01:02:38   643a.eac1.f520  Dynamic    ARPA  HundredGigE0/0/0/26
+100.1.2.4       -          643a.ea34.aec4  Interface  ARPA  HundredGigE0/0/0/25
+100.1.2.5       03:09:59   0476.b0da.2ec4  Dynamic    ARPA  HundredGigE0/0/0/25
+100.1.2.6       -          643a.ea34.ae40  Interface  ARPA  FourHundredGigE0/0/0/8
+100.1.2.7       03:42:29   643a.ea34.d440  Dynamic    ARPA  FourHundredGigE0/0/0/8
+172.27.227.2    00:58:52   0013.5f22.0d4a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.3    01:43:02   0013.5f21.fd0a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.5    00:00:32   3c13.cc50.c2a7  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.6    02:51:32   8c94.1fc7.8aa7  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.10   01:08:41   44b6.be78.4e00  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.101  01:55:31   cced.4dda.9cb0  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.102  03:14:21   38fd.f866.07ab  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.103  03:09:38   38fd.f866.07c6  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.104  02:59:08   38fd.f866.09fd  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.105  00:26:18   cced.4dda.9cb9  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.27.227.106  02:25:32   38fd.f866.09b5  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.2     00:00:37   0013.5f22.0d4a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.3     00:03:11   0013.5f21.fd0a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.5     00:00:02   3c13.cc50.c2a7  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.11    01:21:25   bc4a.563b.2c0e  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.12    00:09:48   548a.baef.7892  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.13    03:16:51   cc7f.75ea.3a72  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.15    00:59:10   001a.c501.5807  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.20    00:00:19   084f.a95c.ffd9  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.21    -          084f.a95c.fb97  Interface  ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.22    00:26:45   084f.a95c.fbf1  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.23    00:00:02   084f.a95c.ffa2  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.24    02:31:08   0050.56b3.c96d  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.25    00:41:31   ecce.13a3.e600  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.26    00:00:06   94ae.f013.6f00  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.27    00:00:07   b08b.d0f2.7550  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.28    00:00:06   084f.a95c.ff98  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.29    00:00:14   084f.a95c.ffbb  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.30    00:16:08   94ae.f013.6b00  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.31    00:02:06   bc4a.563b.2c12  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.32    00:06:44   548a.baef.7896  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.33    00:48:07   a26d.952a.4658  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.34    00:04:06   548a.baee.dd6e  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.36    00:17:53   488b.0a45.ab86  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.37    00:04:39   84f1.4762.c9be  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.38    00:18:52   84f1.4762.e192  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.40    00:59:01   a03d.6ef4.0000  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.41    01:04:38   bcd2.954a.3750  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.45    02:14:51   02ac.cb9c.e609  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.50    00:56:35   000c.29e5.735a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.51    02:46:14   0050.56b3.1ff2  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.52    00:09:44   0050.56b3.1f91  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.53    02:27:42   0050.56b3.c46f  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.55    00:13:32   0050.56b3.2a7c  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.56    00:00:01   0050.56b3.cea2  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.58    00:00:27   0050.56b3.1742  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.61    00:03:43   0050.56b3.13b2  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.63    02:43:49   0050.56b3.1f33  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.64    01:17:48   0050.56b3.006a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.65    02:27:09   0242.ac1d.0b41  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.66    02:32:43   0242.ac1d.0b42  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.67    02:27:13   0242.ac1d.0b43  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.68    01:51:45   7061.7b2a.61ae  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.69    00:20:21   e8eb.34f8.fe26  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.70    02:28:13   0242.ac1d.0b46  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.71    02:11:22   0242.ac1d.0b47  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.73    02:28:45   0242.ac1d.0b49  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.74    01:05:51   0242.ac1d.0b4a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.78    00:00:06   0050.56b3.9d39  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.79    01:13:54   0050.56b3.d0cf  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.80    00:00:00   0050.56b3.f73a  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.81    00:02:04   0050.56b3.7746  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.84    00:04:19   0050.56b3.c427  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.85    02:27:15   0050.56b3.5aa5  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.90    00:00:03   0050.56b3.6b24  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.91    01:05:47   0050.56b3.6b24  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.93    02:15:37   0050.56b3.0eb9  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.95    00:04:20   0050.56b3.72e4  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.96    00:02:47   8c94.1fc7.8aa7  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.101   02:00:44   cc7f.75eb.53c5  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.102   00:05:26   1416.9d87.a091  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.103   01:29:04   cc7f.75eb.56a9  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.105   01:00:22   0050.56b3.72ea  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.110   00:18:02   0050.56b3.9b67  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.111   00:05:33   cc7f.75eb.53ca  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.112   00:16:11   1416.9d87.a096  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.113   00:01:33   cc7f.75eb.56ae  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.115   00:00:22   0050.56b3.9177  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.116   00:01:18   0050.56b3.9177  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.118   02:26:25   0050.56b3.9f4e  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+172.29.11.120   01:25:13   643a.eac1.f500  Dynamic    ARPA  MgmtEth0/RP0/CPU0/0
+200.2.1.1       -          643a.ea34.aee8  Interface  ARPA  FortyGigE0/0/0/34
+201.0.0.1       -          643a.ea34.aec0  Interface  ARPA  HundredGigE0/0/0/24.300
+201.0.0.78      00:30:23   0050.56b3.bae3  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.79      00:42:26   0050.56b3.61e2  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.80      01:42:24   0050.56b3.7d19  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.81      02:08:09   0050.56b3.06cd  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.90      00:00:17   0050.56b3.39ea  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.91      00:00:24   0050.56b3.920e  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.92      00:00:32   0050.56b3.d0f1  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.93      00:00:09   0050.56b3.39ea  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.100     01:12:09   0050.56b3.1a10  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.110     00:05:03   0050.56b3.92cc  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.114     03:48:59   0050.56b3.1a10  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.115     00:00:12   0050.56b3.bd4f  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.116     01:09:20   0050.56b3.bd4f  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.117     01:15:52   0050.56b3.58bd  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.118     01:14:49   0050.56b3.3a8d  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.252     02:30:40   0050.56b3.75fb  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.253     00:00:57   3c13.cc50.c2a7  Dynamic    ARPA  HundredGigE0/0/0/24.300
+201.0.0.254     00:06:37   8c94.1fc7.8aa7  Dynamic    ARPA  HundredGigE0/0/0/24.300
+204.1.0.1       -          643a.ea34.aec0  Interface  ARPA  HundredGigE0/0/0/24.401
+204.1.0.64      03:37:01   0050.56b3.0f60  Dynamic    ARPA  HundredGigE0/0/0/24.401
+
+****************************************************************************************************
+Total length: 350
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:25.051676
+Command: show router-id
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:25.316780
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:25.484 PDT
+Router-ID         Interface
+      
+100.0.0.2         Loopback0       
+
+Router-ID (IPv6)  Interface
+      
+2001:100::2       Loopback0       
+
+****************************************************************************************************
+Total length: 962
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:25.317241
+Command: show platform
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:25.614202
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:25.751 PDT
+Node              Type                     State                    Config state
+--------------------------------------------------------------------------------
+0/RP0/CPU0        8201(Active)             IOS XR RUN               NSHUT
+0/RP0/BMC0        8201                     OPERATIONAL              NSHUT
+0/PM1             PSU2KW-ACPI              OPERATIONAL              NSHUT
+0/FT0             FAN-1RU-PI               OPERATIONAL              NSHUT
+0/FT1             FAN-1RU-PI               OPERATIONAL              NSHUT
+0/FT2             FAN-1RU-PI               OPERATIONAL              NSHUT
+0/FT3             FAN-1RU-PI               OPERATIONAL              NSHUT
+0/FT4             FAN-1RU-PI               OPERATIONAL              NSHUT
+
+****************************************************************************************************
+Total length: 221
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:25.614580
+Command: show rsvp interface detail
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:25.884911
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:26.047 PDT
+
+****************************************************************************************************
+Total length: 2099
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:25.885503
+Command: show srlg
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:26.154539
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:26.317 PDT
+
+  System Information::
+  Interface Count          : 15 (Maximum Interfaces Supported 512)
+  Group Count              : 1 (Maximum Groups Supported 50)
+  Inherit Location Count   : 0 (Maximum Inherit Locations Supported 10)
+  Optical Interfaces Count : 0 (Maximum Optical Interfaces Supported 500)
+
+  Interface    : Bundle-Ether1, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : Bundle-Ether812, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : Bundle-Ether8212, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : Bundle-Ether8223, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : FourHundredGigE0/0/0/1, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : FourHundredGigE0/0/0/10, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : FourHundredGigE0/0/0/20, Value Count : 3
+  References   : 3, Internal flags : 0x3
+  SRLG Values  : 100, 200, 500
+
+  Interface    : FourHundredGigE0/0/0/22, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : FourHundredGigE0/0/0/8, Value Count : 2
+  References   : 3, Internal flags : 0x3
+  SRLG Values  : 600, 700
+
+  Interface    : HundredGigE0/0/0/25, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : HundredGigE0/0/0/26, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : HundredGigE0/0/0/30.100, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : HundredGigE0/0/0/30.101, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : HundredGigE0/0/0/30.102, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Interface    : HundredGigE0/0/0/33, Value Count : 0
+  References   : 2, Internal flags : 0x2
+
+
+  Group        : ron-srlg-1, Value Count : 2
+  SRLG Values  : 600, 700
+
+
+****************************************************************************************************
+Total length: 33251
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:26.155032
+Command: show controllers Optics *
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:26.893501
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:26.588 PDT
+ Port:    Optics0_0_0_0 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: N/A 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFPDD 400G PASSIVE COPPER
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               0.00       0.00          0.00         0.00
+	 Temp. Threshold(celsius)        0.00       0.00          0.00         0.00
+	 Voltage Threshold(volt)         0.00       0.00          0.00         0.00
+
+	 Configured Tx Power = 0.00 dBm 
+	 Configured CD High Threshold = 0 ps/nm 
+	 Configured CD lower Threshold = 0 ps/nm 
+	 Configured OSNR lower Threshold = 0.00 dB 
+	 Configured DGD Higher Threshold = 0.00 ps 
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   1      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   2      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   3      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   4      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   5      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   6      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   7      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+
+	 Temperature = 0.00 Celsius 
+	 Voltage = 0.00 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP-DD
+	 Optics type 		: QSFPDD 400G PASSIVE COPPER
+	 Name 			: CISCO-LEONI
+	 OUI Number 		: a8.b0.ae
+	 Part Number 		: L45593-K218-C20
+	 Rev Number 		: 00
+	 Serial Number 		: LCC2412GFVD-B
+	 PID 			: QDD-400-CU2M
+	 VID 			: V01 
+	 Date Code(yy/mm/dd) 	: 20/03/16
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_1 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_2 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_3 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_4 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_5 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_6 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_7 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_8 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFPDD 400G ZRP
+	 DWDM carrier Info: C BAND, MSA ITU Channel=43, Frequency=194.00THz,
+	 Wavelength=1545.322nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+	 Alarm Statistics:
+
+	 -------------
+	 HIGH-RX-PWR = 0            LOW-RX-PWR = 0          
+	 HIGH-TX-PWR = 0            LOW-TX-PWR = 1          
+	 HIGH-LBC = 0          	    HIGH-DGD = 0          
+	 OOR-CD = 0          	    OSNR = 1          
+	 WVL-OOL = 0          	    MEA  = 0          
+	 IMPROPER-REM = 0          
+	 TX-POWER-PROV-MISMATCH = 0          
+	 Laser Bias Current = 70.0 mA
+	 Actual TX Power = -9.93 dBm 
+	 RX Power = -8.51 dBm 
+	 RX Signal Power = -8.71 dBm 
+	 Frequency Offset = 49 MHz 
+	 Laser Temperature = 42.27 Celsius 
+	 Laser Age = 0 %
+	 DAC Rate = 1x1 
+
+	 Performance Monitoring: Enable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)         13.0      -23.0          10.0        -21.0
+	 Tx Power Threshold(dBm)          0.0      -16.0          -2.0        -14.0
+	 LBC Threshold(mA)               0.00       0.00          0.00         0.00
+	 Temp. Threshold(celsius)       80.00      -5.00         75.00         0.00
+	 Voltage Threshold(volt)         3.46       3.13          3.43         3.16
+
+	 LBC High Threshold = 98 % 
+	 Configured Tx Power = -10.00 dBm 
+	 Configured CD High Threshold = 160000 ps/nm 
+	 Configured CD lower Threshold = -160000 ps/nm 
+	 Configured OSNR lower Threshold = 9.00 dB 
+	 Configured DGD Higher Threshold = 80.00 ps 
+	 Baud Rate =  59.8437500000 GBd
+	 Modulation Type: 16QAM 
+	 Chromatic Dispersion -2 ps/nm 
+	 Configured CD-MIN -2400 ps/nm  CD-MAX 2400 ps/nm 
+	 Second Order Polarization Mode Dispersion = 32.00 ps^2 
+	 Optical Signal to Noise Ratio = 36.40 dB 
+	 Polarization Dependent Loss = 0.60 dB 
+	 Polarization Change Rate = 0.00 rad/s 
+	 Differential Group Delay = 1.00 ps 
+
+	 Temperature = 42.00 Celsius 
+	 Voltage = 3.34 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP-DD
+	 Optics type 		: QSFPDD 400G ZRP
+	 Name 			: CISCO-ACACIA
+	 OUI Number 		: 7c.b2.5c
+	 Part Number 		: DP04QSDD-E30-19E
+	 Rev Number 		: 01
+	 Serial Number 		: ACA2501003Y
+	 PID 			: QDD-400G-ZRP-S
+	 VID 			: ES03
+	 Firmware Version 	: Major.Minor.Build
+		 Active 	: 61.20.13
+		 Inactive 	: 61.10.12
+	 Date Code(yy/mm/dd) 	: 21/01/09
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_9 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_10 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Yellow 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFPDD 400G ZRP
+	 DWDM carrier Info: C BAND, MSA ITU Channel=73, Frequency=192.50THz,
+	 Wavelength=1557.363nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+	 Alarm Statistics:
+
+	 -------------
+	 HIGH-RX-PWR = 0            LOW-RX-PWR = 0          
+	 HIGH-TX-PWR = 0            LOW-TX-PWR = 2          
+	 HIGH-LBC = 0          	    HIGH-DGD = 0          
+	 OOR-CD = 0          	    OSNR = 23         
+	 WVL-OOL = 0          	    MEA  = 0          
+	 IMPROPER-REM = 0          
+	 TX-POWER-PROV-MISMATCH = 0          
+	 Laser Bias Current = 60.6 mA
+	 Actual TX Power = -11.47 dBm 
+	 RX Power = -45.69 dBm 
+	 RX Signal Power = -40.00 dBm 
+	 Frequency Offset = 0 MHz 
+	 Laser Temperature = 44.51 Celsius 
+	 Laser Age = 0 %
+	 DAC Rate = 1x1.25 
+
+	 Performance Monitoring: Enable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)         13.0      -24.0          10.0        -22.0
+	 Tx Power Threshold(dBm)          0.0      -16.0          -2.0        -14.0
+	 LBC Threshold(mA)               0.00       0.00          0.00         0.00
+	 Temp. Threshold(celsius)       80.00      -5.00         75.00         0.00
+	 Voltage Threshold(volt)         3.46       3.13          3.43         3.16
+
+	 LBC High Threshold = 98 % 
+	 Configured Tx Power = -11.50 dBm 
+	 Configured CD High Threshold = 160000 ps/nm 
+	 Configured CD lower Threshold = -160000 ps/nm 
+	 Configured OSNR lower Threshold = 9.00 dB 
+	 Configured DGD Higher Threshold = 80.00 ps 
+	 Baud Rate =  60.1385459900 GBd
+	 Modulation Type: 16QAM 
+	 Chromatic Dispersion 0 ps/nm 
+	 Configured CD-MIN -13000 ps/nm  CD-MAX 13000 ps/nm 
+	 Second Order Polarization Mode Dispersion = 0.00 ps^2 
+	 Optical Signal to Noise Ratio = 0.00 dB 
+	 Polarization Dependent Loss = 0.00 dB 
+	 Polarization Change Rate = 0.00 rad/s 
+	 Differential Group Delay = 0.00 ps 
+
+	 Temperature = 42.00 Celsius 
+	 Voltage = 3.31 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP-DD
+	 Optics type 		: QSFPDD 400G ZRP
+	 Name 			: CISCO-ACACIA
+	 OUI Number 		: 7c.b2.5c
+	 Part Number 		: DP04QSDD-E30-190
+	 Rev Number 		: A
+	 Serial Number 		: ACA2524002B
+	 PID 			: QDD-400G-ZRP-S
+	 VID 			: V01 
+	 Firmware Version 	: Major.Minor.Build
+		 Active 	: 61.20.13
+		 Inactive 	: 61.10.12
+	 Date Code(yy/mm/dd) 	: 21/06/15
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_11 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_12 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_13 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_14 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_15 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_16 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_17 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_18 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_19 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_20 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Yellow 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFPDD 400G ZR
+	 DWDM carrier Info: C BAND, MSA ITU Channel=10, Frequency=195.65THz,
+	 Wavelength=1532.290nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+	 Alarm Statistics:
+
+	 -------------
+	 HIGH-RX-PWR = 0            LOW-RX-PWR = 0          
+	 HIGH-TX-PWR = 0            LOW-TX-PWR = 5          
+	 HIGH-LBC = 0          	    HIGH-DGD = 0          
+	 OOR-CD = 0          	    OSNR = 52         
+	 WVL-OOL = 0          	    MEA  = 0          
+	 IMPROPER-REM = 0          
+	 TX-POWER-PROV-MISMATCH = 0          
+	 Laser Bias Current = 52.5 mA
+	 Actual TX Power = -9.94 dBm 
+	 RX Power = -40.00 dBm 
+	 RX Signal Power = -40.00 dBm 
+	 Frequency Offset = 0 MHz 
+	 Laser Temperature = 42.79 Celsius 
+	 Laser Age = 0 %
+	 DAC Rate = 1x1 
+
+	 Performance Monitoring: Enable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)         13.0      -23.0          10.0        -21.0
+	 Tx Power Threshold(dBm)          0.0      -16.0          -2.0        -14.0
+	 LBC Threshold(mA)               0.00       0.00          0.00         0.00
+	 Temp. Threshold(celsius)       80.00      -5.00         75.00         0.00
+	 Voltage Threshold(volt)         3.46       3.13          3.43         3.16
+
+	 LBC High Threshold = 98 % 
+	 Configured Tx Power = -10.00 dBm 
+	 Configured CD High Threshold = 160000 ps/nm 
+	 Configured CD lower Threshold = -160000 ps/nm 
+	 Configured OSNR lower Threshold = 9.00 dB 
+	 Configured DGD Higher Threshold = 80.00 ps 
+	 Baud Rate =  59.8437500000 GBd
+	 Modulation Type: 16QAM 
+	 Chromatic Dispersion 0 ps/nm 
+	 Configured CD-MIN -2400 ps/nm  CD-MAX 2400 ps/nm 
+	 Second Order Polarization Mode Dispersion = 0.00 ps^2 
+	 Optical Signal to Noise Ratio = 0.00 dB 
+	 Polarization Dependent Loss = 0.00 dB 
+	 Polarization Change Rate = 0.00 rad/s 
+	 Differential Group Delay = 0.00 ps 
+
+	 Temperature = 41.00 Celsius 
+	 Voltage = 3.34 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP-DD
+	 Optics type 		: QSFPDD 400G ZR
+	 Name 			: CISCO-ACACIA
+	 OUI Number 		: 7c.b2.5c
+	 Part Number 		: DP04QSDD-E20-19E
+	 Rev Number 		: 10
+	 Serial Number 		: ACA245100EU
+	 PID 			: QDD-400G-ZR-S
+	 VID 			: ES03
+	 Firmware Version 	: Major.Minor.Build
+		 Active 	: 61.20.13
+		 Inactive 	: 61.10.12
+	 Date Code(yy/mm/dd) 	: 20/12/28
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_21 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_22 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_23 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_24 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               8.62       6.38          8.25         6.75
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 30.52 Celsius 
+	 Voltage = 3.33 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-DELTA
+	 OUI Number 		: 20.f8.5e
+	 Part Number 		: QAOC-100G4F1A03C
+	 Rev Number 		: A
+	 Serial Number 		: DTS2432A138-A
+	 PID 			: QSFP-100G-AOC3M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/08/04
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_25 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)              12.45       3.25         12.45         3.25
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 27.67 Celsius 
+	 Voltage = 3.37 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-INNOLIGHT
+	 OUI Number 		: 44.7c.7f
+	 Part Number 		: TF-FC005-NC2
+	 Rev Number 		: 1B
+	 Serial Number 		: INL24220229-B
+	 PID 			: QSFP-100G-AOC5M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/05/25
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_26 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               8.62       6.38          8.25         6.75
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 32.81 Celsius 
+	 Voltage = 3.32 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-DELTA
+	 OUI Number 		: 20.f8.5e
+	 Part Number 		: QAOC-100G4F1A03C
+	 Rev Number 		: A
+	 Serial Number 		: DTS2427B969-A
+	 PID 			: QSFP-100G-AOC3M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/07/02
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_27 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_28 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Yellow 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+	 Detected LOS/LOL/FAULT: RX-LOS   RX-LOL   
+
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               8.62       6.38          8.25         6.75
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 28.23 Celsius 
+	 Voltage = 3.34 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-DELTA
+	 OUI Number 		: 20.f8.5e
+	 Part Number 		: QAOC-100G4F1A03C
+	 Rev Number 		: A
+	 Serial Number 		: DTS2427B913-A
+	 PID 			: QSFP-100G-AOC3M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/07/02
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_29 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Yellow 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+	 Detected LOS/LOL/FAULT: RX-LOS   RX-LOL   
+
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               8.62       6.38          8.25         6.75
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.5 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 30.40 Celsius 
+	 Voltage = 3.36 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-DELTA
+	 OUI Number 		: 20.f8.5e
+	 Part Number 		: QAOC-100G4F1A03C
+	 Rev Number 		: A
+	 Serial Number 		: DTS2427B970-A
+	 PID 			: QSFP-100G-AOC3M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/07/02
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_30 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G AOC
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)              12.45       3.25         12.45         3.25
+	 Temp. Threshold(celsius)       75.00      -5.00         70.00         0.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   1      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   2      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+	   3      7.0 mA  -40.00 dBm  -40.00 dBm       N/A  
+
+	 Temperature = 26.44 Celsius 
+	 Voltage = 3.36 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G AOC
+	 Name 			: CISCO-INNOLIGHT
+	 OUI Number 		: 44.7c.7f
+	 Part Number 		: TF-FC005-NC2
+	 Rev Number 		: 1B
+	 Serial Number 		: INL24220140-B
+	 PID 			: QSFP-100G-AOC5M
+	 VID 			: V03
+	 Date Code(yy/mm/dd) 	: 20/05/25
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_31 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_32 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+ Port:    Optics0_0_0_33 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC ENABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP28 100G SM SR
+	 Wavelength = 1301.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          5.4      -15.1           2.5        -11.1
+	 Tx Power Threshold(dBm)          5.4      -10.8           2.5         -6.8
+	 LBC Threshold(mA)              80.38      14.41         75.02        17.29
+	 Temp. Threshold(celsius)       65.00       5.00         60.00        10.00
+	 Voltage Threshold(volt)         3.63       2.97          3.46         3.13
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0     34.8 mA    1.29 dBm    0.49 dBm       N/A  
+	   1     34.7 mA    0.81 dBm    0.41 dBm       N/A  
+	   2     34.6 mA    1.57 dBm    0.48 dBm       N/A  
+	   3     34.6 mA    1.13 dBm    0.43 dBm       N/A  
+
+	 Temperature = 32.08 Celsius 
+	 Voltage = 3.36 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP28
+	 Optics type 		: QSFP28 100G SM SR
+	 Name 			: CISCO-INNOLIGHT
+	 OUI Number 		: 44.7c.7f
+	 Part Number 		: TR-FC13H-HCI
+	 Rev Number 		: 1C
+	 Serial Number 		: INL24216064
+	 PID 			: QSFP-100G-SM-SR
+	 VID 			: V02
+	 Date Code(yy/mm/dd) 	: 20/05/22
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_34 
+
+ Controller State: Up 
+
+ Transport Admin State: In Service 
+
+ Laser State: On 
+
+ LED State: Green 
+
+ FEC State: FEC DISABLED 
+ 
+ Optics Status 
+
+	 Optics Type:  QSFP+ 40G SR BD
+	 Wavelength = 0.00 nm 
+
+	 Alarm Status:
+	 -------------
+	 Detected Alarms: None
+
+
+	 LOS/LOL/Fault Status:
+
+
+	 Performance Monitoring: Disable	
+
+	 THRESHOLD VALUES
+	 ----------------
+
+	 Parameter                 High Alarm  Low Alarm  High Warning  Low Warning
+	 ------------------------  ----------  ---------  ------------  -----------
+	 Rx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 Tx Power Threshold(dBm)          0.0        0.0           0.0          0.0
+	 LBC Threshold(mA)               0.00       0.00          0.00         0.00
+	 Temp. Threshold(celsius)        0.00       0.00          0.00         0.00
+	 Voltage Threshold(volt)         0.00       0.00          0.00         0.00
+
+	 Polarization parameters not supported by optics
+
+	 Lane  Laser Bias    TX Power    RX Power  Output Frequency
+	 ----  ----------  ----------  ----------  ----------------
+	   0      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   1      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   2      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+	   3      0.0 mA    0.00 dBm    0.00 dBm       N/A  
+
+	 Temperature = 0.00 Celsius 
+	 Voltage = 0.00 V 
+
+ Transceiver Vendor Details
+
+	 Form Factor 		: QSFP+
+	 Optics type 		: QSFP+ 40G SR BD
+	 Name 			: CISCO-AVAGO
+	 OUI Number 		: 00.17.6a
+	 Part Number 		: AFBR-79EBPZ-CS2
+	 Rev Number 		: 01
+	 Serial Number 		: AVM2434U3UD
+	 PID 			: QSFP-40G-SR-BD
+	 VID 			: V02
+	 Date Code(yy/mm/dd) 	: 20/08/19
+
+----------------------------------------------- 
+ Port:    Optics0_0_0_35 
+
+ Controller State: Down 
+
+ Transport Admin State: In Service 
+
+ Laser State: Off 
+
+	 Optics not present
+	 Optics Type: Unavailable
+	 DWDM Carrier Info: Unavailable, MSA ITU Channel= Unavailable, Frequency= Unavailable , Wavelength= Unavailable 
+	 TX Power = Unavailable 
+	 RX Power = Unavailable 
+----------------------------------------------- 
+
+****************************************************************************************************
+Total length: 4842
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:26.894273
+Command: show controllers coherentDSP *
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:27.367837
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:27.327 PDT
+
+Port                                            : CoherentDSP 0/0/0/8
+Controller State                                : Up
+Inherited Secondary State                       : Normal
+Configured Secondary State                      : Normal
+Derived State                                   : In Service
+Loopback mode                                   : None
+BER Thresholds                                  : SF = 1.0E-5  SD = 1.0E-7
+Performance Monitoring                          : Enable
+Bandwidth                                       : 400.0Gb/s
+
+Alarm Information:
+LOS = 0	LOF = 0	LOM = 0
+OOF = 0	OOM = 0	AIS = 0
+IAE = 0	BIAE = 0	SF_BER = 0
+SD_BER = 0	BDI = 0	TIM = 0
+FECMISMATCH = 0	FEC-UNC = 0	FLEXO_GIDM = 0
+FLEXO-MM = 0	FLEXO-LOM = 0	FLEXO-RDI = 0
+FLEXO-LOF = 1	
+Detected Alarms                                 : None
+
+Bit Error Rate Information
+PREFEC  BER                                     : 9.3E-04 
+POSTFEC BER                                     : 0.0E+00 
+Q-Factor                                        : 9.80 dB 
+
+Q-Margin                                        : 2.60dB 
+
+OTU TTI Received 
+
+FEC mode                                        : C_FEC
+
+---------------------------------------------------
+
+
+Port                                            : CoherentDSP 0/0/0/10
+Controller State                                : Down
+Inherited Secondary State                       : Normal
+Configured Secondary State                      : Normal
+Derived State                                   : In Service
+Loopback mode                                   : None
+BER Thresholds                                  : SF = 1.0E-5  SD = 1.0E-7
+Performance Monitoring                          : Enable
+Bandwidth                                       : 400.0Gb/s
+
+Alarm Information:
+LOS = 23	LOF = 0	LOM = 0
+OOF = 0	OOM = 0	AIS = 0
+IAE = 0	BIAE = 0	SF_BER = 0
+SD_BER = 0	BDI = 0	TIM = 0
+FECMISMATCH = 0	FEC-UNC = 0	FLEXO_GIDM = 0
+FLEXO-MM = 0	FLEXO-LOM = 0	FLEXO-RDI = 0
+FLEXO-LOF = 17	
+Detected Alarms                                 : LOS 
+
+Bit Error Rate Information
+PREFEC  BER                                     : 5.0E-01 
+POSTFEC BER                                     : 0.0E+00 
+Q-Factor                                        : 0.00 dB 
+
+Q-Margin                                        : 0.00dB 
+
+OTU TTI Received 
+
+FEC mode                                        : O_FEC
+
+---------------------------------------------------
+
+
+Port                                            : CoherentDSP 0/0/0/20
+Controller State                                : Down
+Inherited Secondary State                       : Normal
+Configured Secondary State                      : Normal
+Derived State                                   : In Service
+Loopback mode                                   : None
+BER Thresholds                                  : SF = 1.0E-5  SD = 1.0E-7
+Performance Monitoring                          : Enable
+Bandwidth                                       : 400.0Gb/s
+
+Alarm Information:
+LOS = 62	LOF = 0	LOM = 0
+OOF = 0	OOM = 0	AIS = 0
+IAE = 0	BIAE = 0	SF_BER = 0
+SD_BER = 0	BDI = 0	TIM = 0
+FECMISMATCH = 0	FEC-UNC = 0	FLEXO_GIDM = 0
+FLEXO-MM = 0	FLEXO-LOM = 0	FLEXO-RDI = 0
+FLEXO-LOF = 10	
+Detected Alarms                                 : LOS 
+
+Bit Error Rate Information
+PREFEC  BER                                     : 5.0E-01 
+POSTFEC BER                                     : 0.0E+00 
+Q-Factor                                        : 0.00 dB 
+
+Q-Margin                                        : 0.00dB 
+
+OTU TTI Received 
+
+FEC mode                                        : C_FEC
+
+---------------------------------------------------
+
+
+Port                                            : CoherentDSP 0/0/0/22
+Controller State                                : Down
+Inherited Secondary State                       : Normal
+Configured Secondary State                      : Normal
+Derived State                                   : In Service
+Loopback mode                                   : None
+BER Thresholds                                  : SF = 1.0E-5  SD = 1.0E-7
+Performance Monitoring                          : Enable
+Bandwidth                                       : 400.0Gb/s
+
+Alarm Information:
+LOS = 0	LOF = 0	LOM = 0
+OOF = 0	OOM = 0	AIS = 0
+IAE = 0	BIAE = 0	SF_BER = 0
+SD_BER = 0	BDI = 0	TIM = 0
+FECMISMATCH = 0	FEC-UNC = 0	FLEXO_GIDM = 0
+FLEXO-MM = 0	FLEXO-LOM = 0	FLEXO-RDI = 0
+FLEXO-LOF = 0	
+Detected Alarms                                 : None
+
+OTU TTI Received 
+
+FEC mode                                        : C_FEC
+
+---------------------------------------------------
+
+
+****************************************************************************************************
+Total length: 1129
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:27.368524
+Command: show lldp neighbors
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:27.648589
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:27.802 PDT
+Capability codes:
+	(R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+	(W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID       Local Intf                      Hold-time  Capability      Port ID
+ron-8201-1      FourHundredGigE0/0/0/0          120        R               FourHundredGigE0/0/0/0
+ron-8201-3      FourHundredGigE0/0/0/8          120        R               FourHundredGigE0/0/0/8
+ron-sw-1        HundredGigE0/0/0/24             120        B,R             Ethernet1/50
+ron-poc-8201-1  HundredGigE0/0/0/25             120        R               HundredGigE0/0/0/25
+cloud-ncs540-1  HundredGigE0/0/0/26             120        R               HundredGigE0/0/0/28
+cst-8201-p3     HundredGigE0/0/0/33             120        R               HundredGigE0/0/0/28
+[DISABLED]      FortyGigE0/0/0/34               121        N/A             40a6.b735.d570
+
+Total entries displayed: 7
+
+
+****************************************************************************************************
+Total length: 3630
+SSH
+REQUEST:
+-------
+Time: 2022-03-23T18:18:27.649263
+Command: show lldp neighbors detail
+RESPONSE:
+--------
+Time: 2022-03-23T18:18:27.940563
+Name: 
+Prompt: RP/0/RP0/CPU0:ron-8201-2#
+Response:
+Wed Mar 23 11:19:28.083 PDT
+Capability codes:
+	(R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+	(W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+------------------------------------------------
+Local Interface: FourHundredGigE0/0/0/0
+Parent Interface: Bundle-Ether8212
+Chassis id: 0476.b0da.4d00
+Port id: FourHundredGigE0/0/0/0
+Port Description - not advertised
+System Name: ron-8201-1
+
+System Description: 
+7.3.2, 8000
+
+Time remaining: 97 seconds
+Hold Time: 120 seconds
+System Capabilities: R
+Enabled Capabilities: R
+Management Addresses:
+  IPv4 address: 172.29.11.20
+
+Peer MAC Address: 04:76:b0:da:4c:00
+
+
+------------------------------------------------
+Local Interface: FourHundredGigE0/0/0/8
+Chassis id: 643a.ea34.d500
+Port id: FourHundredGigE0/0/0/8
+Port Description: "To ron-8201-2 via NCS1K" 
+System Name: ron-8201-3
+
+System Description: 
+7.3.2, 8000
+
+Time remaining: 107 seconds
+Hold Time: 120 seconds
+System Capabilities: R
+Enabled Capabilities: R
+Management Addresses:
+  IPv4 address: 100.1.2.7
+
+Peer MAC Address: 64:3a:ea:34:d4:40
+
+
+------------------------------------------------
+Local Interface: HundredGigE0/0/0/24
+Chassis id: 3c13.cc50.c2dc
+Port id: Ethernet1/50
+Port Description: "ron-8201-2 HundredGigE0/0/0/24; data" 
+System Name: ron-sw-1
+
+System Description: 
+Cisco Nexus Operating System (NX-OS) Software 9.3(4)
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2020, Cisco Systems, Inc. All rights reserved.
+
+Time remaining: 95 seconds
+Hold Time: 120 seconds
+System Capabilities: B,R
+Enabled Capabilities: B,R
+Management Addresses - not advertised
+Peer MAC Address: 3c:13:cc:50:c2:dc
+
+
+------------------------------------------------
+Local Interface: HundredGigE0/0/0/25
+Chassis id: 0476.b0da.2f00
+Port id: HundredGigE0/0/0/25
+Port Description: ron-8201-2 0/0/0/25
+System Name: ron-poc-8201-1
+
+System Description: 
+7.3.2, 8000
+
+Time remaining: 105 seconds
+Hold Time: 120 seconds
+System Capabilities: R
+Enabled Capabilities: R
+Management Addresses:
+  IPv4 address: 100.1.2.5
+
+Peer MAC Address: 04:76:b0:da:2e:c4
+
+
+------------------------------------------------
+Local Interface: HundredGigE0/0/0/26
+Chassis id: 643a.eac1.f581
+Port id: HundredGigE0/0/0/28
+Port Description: "ron-8201-2 HundredGigE0/0/0/26"
+System Name: cloud-ncs540-1
+
+System Description: 
+7.3.1, NCS540L
+
+Time remaining: 91 seconds
+Hold Time: 120 seconds
+System Capabilities: R
+Enabled Capabilities: R
+Management Addresses:
+  IPv4 address: 100.1.1.129
+  IPv6 address: 2001:100::50
+
+Peer MAC Address: 64:3a:ea:c1:f5:20
+
+
+------------------------------------------------
+Local Interface: HundredGigE0/0/0/33
+Chassis id: 6c13.d5d2.6b00
+Port id: HundredGigE0/0/0/28
+Port Description - not advertised
+System Name: cst-8201-p3
+
+System Description: 
+7.5.2.20I, 8000
+
+Time remaining: 95 seconds
+Hold Time: 120 seconds
+System Capabilities: R
+Enabled Capabilities: R
+Management Addresses:
+  IPv4 address: 82.2.3.1
+  IPv6 address: 2001:101::9
+
+Peer MAC Address: 6c:13:d5:d2:6a:d0
+
+
+------------------------------------------------
+Local Interface: FortyGigE0/0/0/34
+Chassis id: 40a6.b735.d570
+Port id: 40a6.b735.d570
+Port Description - not advertised
+System Name - not advertised
+System Description - not advertised
+
+Time remaining: 97 seconds
+Hold Time: 121 seconds
+System Capabilities: N/A
+Enabled Capabilities: N/A
+Management Addresses - not advertised
+Peer MAC Address: 40:a6:b7:35:d5:70
+
+
+Total entries displayed: 7
+
+
